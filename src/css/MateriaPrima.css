@@ -42,20 +42,6 @@
     font-size: 15px !important;
   }
   
-  .btn-salvar{
-    /* background-color: green !important; */
-    /* width: 100px;       */
-    color: lightgreen !important;
-  }
-
-  .btn-deletar{
-    color: lightcoral !important;
-}
-
-.btn-limpar{
-    color: #BFBFB8 !important;
-  }
-
   .form-button:hover {
     background-color: #BFBFB8 !important; /* Cor de fundo do botão ao passar o mouse */
     color: #333 !important;
@@ -121,4 +107,26 @@
     background-color: red !important;
     color: black !important;
     font-weight: bolder !important;
+  }
+
+  .MuiButton-colorPrimary{
+    color: black !important;
+  }
+
+  .MuiDialog-paperWidthSm{
+    background-color: #BFBFB8 !important;
+  }
+
+  .btn-salvar{
+    /* background-color: green !important; */
+    /* width: 100px;       */
+    color: lightgreen !important;
+  }
+
+  .btn-deletar{
+    color: lightcoral !important;
+}
+
+  .btn-limpar{
+    color: #BFBFB8 !important;
   }

@@ -41,7 +41,6 @@ export default function MateriaPrima() {
     const oDados = { id: id, name: nome, quantity: quantidade, um: unidade, price: formattedPrice };
     console.log('Dados do formulário:', oDados);
 
-    debugger
     API.post('/material', oDados)
       .then(response => {
         console.log('Material gravado com sucesso:', response.data);
@@ -62,15 +61,18 @@ export default function MateriaPrima() {
 
   const confirmDeleteMaterial = (e) => {
     setDeletePopup(false)
-
+  
+    debugger
     API.delete(`/material/${id}`)
       .then(response => {
+        debugger
         console.log('Material deletado com sucesso:', response.data);
         setSuccessMessage('Material deletado com sucesso!')
         setSucessoPopup(true);
         limparCampos();
       })
       .catch(error => {
+        debugger
         console.error(error);
         setErrorMessage(error.response.data)
         setErroPopup(true);
