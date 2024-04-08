@@ -32,7 +32,7 @@ export default function MateriaPrima() {
       .catch(error => {
         console.error(error);
       });
-  }, []);
+  }, [mostrarPopup]);
 
   const handleSubmit = (e) => {
     e.preventDefault();

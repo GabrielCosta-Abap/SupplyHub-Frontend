@@ -73,12 +73,12 @@
     border: none;
     cursor: pointer;
   }
-
-.css-19qh8xo-MuiInputBase-input-MuiOutlinedInput-input,
-.css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input{
-    background-color: #FFF !important;
-}
   
+.MuiInputBase-inputAdornedEnd,
+.MuiInputBase-inputSizeSmall{
+  background-color: #FFF !important;
+}
+
 .footerbar {
     position: fixed;
     bottom: 0;
