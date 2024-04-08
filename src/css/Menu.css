@@ -1,0 +1,97 @@
+.container{
+    background-color: #BFBFB8;
+}
+
+.side-menu {
+    height: 100vh; /* altura do menu (pode ser ajustado conforme necessário) */
+    background-color: #35403A; /* cor de fundo do menu */
+    /* position: ;  */
+
+    top: 0; /* distância do topo da tela */
+    left: 0; /* distância da borda esquerda da tela */
+    overflow-y: auto; /* adicione rolagem vertical se o conteúdo do menu for maior que a tela */
+    padding-top: 10px; 
+    color: #fff; /* cor do texto no menu */
+  }
+  
+  .side-menu ul {
+    list-style-type: none; /* remova os pontos da lista */
+    padding: 0;
+  }
+  
+  .side-menu ul li {
+    padding: 10px;
+    cursor: pointer; /* cursor do mouse como um ponteiro ao pairar sobre os itens do menu */
+  }
+  
+  .side-menu ul li:hover {
+    background-color: #555; /* cor de fundo ao passar o mouse */
+  }
+  .menu-item {
+    display: flex; 
+    align-items: center; 
+    /* color: #F39200 !important; */
+    font-weight: bolder;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+  }
+  
+  .menu-item svg {
+    margin-right: 5px; /* Adiciona uma margem à direita do ícone */
+  }
+
+  .container {
+    display: flex;
+  }
+  
+  .side-menu {
+    flex: 0 0 auto;
+    /* width: 250px;  */
+  }
+  
+  .content {
+    flex: 1; /* Faz com que o conteúdo ocupe o espaço restante */
+  }
+  
+  .app-header {
+    background-color: #4C594F;
+    color: #fff;
+    padding: 10px 20px; /* Espaçamento interno */
+  }
+  
+  .header-content {
+    display: flex; /* Ativa o modelo de layout flexbox */
+    justify-content: space-between; /* Alinha os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+  }
+  
+  h1 {
+    font-size: 18px; /* Tamanho da fonte */
+    margin: 0; /* Remove as margens padrão */
+  }
+  
+  .logoff-button {
+    background-color: #BFBFB8; /* Cor de fundo do botão */
+    color: #232625; /* Cor do texto do botão */
+    font-weight: bold;
+    border: none; /* Remove a borda */
+    padding: 8px 16px; /* Espaçamento interno */
+    border-radius: 4px; /* Borda arredondada */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+  }
+  
+  .logoff-button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+  }
+  
+.side-menu-burger{
+    display: flex; 
+    align-items: center; 
+    background-color: #BFBFB8;
+    color: #000;
+    border-radius: 5px;
+    font-weight: bolder;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-left: 10px;
+}
+

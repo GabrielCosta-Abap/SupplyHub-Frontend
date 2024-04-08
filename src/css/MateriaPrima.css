@@ -1,0 +1,124 @@
+.form-title{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #333;
+}
+
+.materia-prima-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    padding-top: 0;
+  }
+  
+  .form-input {
+    margin-top: 10px !important;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc; /* Cor da borda */
+  }
+  
+  .input-id{
+    width: 400px;
+  }
+
+  .input-nome-material{
+    width: 400px;
+  }
+
+  .input-unidade-de-medida{
+    width: 200px ;
+  }
+
+  .form-button {
+    color: #FFFFFF; /* Cor do texto do botão */
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-weight: bolder;
+    font-size: 15px !important;
+  }
+  
+  .btn-salvar{
+    /* background-color: green !important; */
+    /* width: 100px;       */
+    color: lightgreen !important;
+  }
+
+  .btn-deletar{
+    color: lightcoral !important;
+}
+
+.btn-limpar{
+    color: #BFBFB8 !important;
+  }
+
+  .form-button:hover {
+    background-color: #BFBFB8 !important; /* Cor de fundo do botão ao passar o mouse */
+    color: #333 !important;
+    transition: 0.6s ease-in-out !important;
+
+  }
+  
+  .dialog-content {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .popup-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+.css-19qh8xo-MuiInputBase-input-MuiOutlinedInput-input,
+.css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input{
+    background-color: #FFF !important;
+}
+  
+.footerbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Cor de fundo destacada */
+    padding: 10px 0; /* Espaçamento interno */
+    text-align: center; /* Centralizar o conteúdo horizontalmente */
+  }
+  
+  .footerbar button {
+    margin: 0 10px; /* Espaçamento entre os botões */
+    padding: 8px 16px; /* Espaçamento interno dos botões */
+    font-size: 16px; /* Tamanho da fonte dos botões */
+    color: white; /* Cor do texto dos botões */
+    /* background-color: #007bff;  */
+    border: none; /* Remover borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor do mouse ao passar por cima */
+  }
+  
+  .successTitle{
+    background-color: lightgreen;
+    font-weight: bolder;
+  }
+  
+  .successMessage,
+  .deleteMessage,
+  .errorMessage{
+    font-size: 20px;
+  }
+  
+  .errorTitle,
+  .deleteTitle{
+    background-color: lightcoral;
+    font-weight: bolder;
+  }
+  
+  .deleteButton{
+    background-color: red !important;
+    color: black !important;
+    font-weight: bolder !important;
+  }
