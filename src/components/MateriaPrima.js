@@ -11,6 +11,7 @@ export default function MateriaPrima() {
   const [id, setId] = useState('');
   const [nome, setNome] = useState('');
   const [quantidade, setQuantidade] = useState('');
+  const [quantidadeNecessaria, setQuantidadeNecessaria] = useState('');
   const [unidade, setUnidade] = useState('');
   const [precoCusto, setPrecoCusto] = useState('');
   const [mostrarPopup, setMostrarPopup] = useState(false);
@@ -38,7 +39,12 @@ export default function MateriaPrima() {
     e.preventDefault();
 
     let formattedPrice = precoCusto.replaceAll('.', '').replace(',', '.')
-    const oDados = { id: id, name: nome, quantity: quantidade, um: unidade, price: formattedPrice };
+    const oDados = { id: id, 
+                     name: nome, 
+                     quantity: quantidade,
+                     neededQuantity: quantidadeNecessaria, 
+                     um: unidade, 
+                     price: formattedPrice };
     console.log('Dados do formulário:', oDados);
 
     API.post('/material', oDados)
@@ -84,6 +90,7 @@ export default function MateriaPrima() {
     setId('');
     setNome('');
     setQuantidade('');
+    setQuantidadeNecessaria('');
     setUnidade('');
     setPrecoCusto('');
   };
@@ -92,6 +99,7 @@ export default function MateriaPrima() {
     setId(material.id);
     setNome(material.name);
     setQuantidade(material.quantity);
+    setQuantidadeNecessaria(material.neededquantity);
     setUnidade(material.um);
     setPrecoCusto(material.price);
     setMostrarPopup(false);
@@ -124,7 +132,7 @@ export default function MateriaPrima() {
             }}
           />
           {materiaisFiltrados.map(material => (
-            <div key={material.id}>
+            <div className="materialsListButton" key={material.id}>
               <Button onClick={() => handleSelecionarMaterial(material)}>{material.name}</Button>
             </div>
           ))}
@@ -134,27 +142,6 @@ export default function MateriaPrima() {
         </DialogActions>
       </Dialog>
 
-
-      // <div>
-      //   <TextField
-      //     label="Buscar Material"
-      //     type="text"
-      //     value={filtroNome}
-      //     onChange={(e) => setFiltroNome(e.target.value)}
-      //     InputProps={{
-      //       endAdornment: (
-      //         <InputAdornment position="end">
-      //           <IconButton>
-      //             <SearchIcon />
-      //           </IconButton>
-      //         </InputAdornment>
-      //       ),
-      //     }}
-      //   />
-      //   {materiaisFiltrados.map(material => (
-      //     <Button key={material.id} onClick={() => handleSelecionarMaterial(material)}>{material.name}</Button>
-      //   ))}
-      // </div>
     );
   };
 
@@ -200,11 +187,24 @@ export default function MateriaPrima() {
         </div>
         <div>
           <TextField
-            label="Quantidade"
+            label="Quantidade em estoque"
             type="number"
             size="small"
             value={quantidade}
             onChange={(e) => setQuantidade(e.target.value)}
+            className="form-input"
+            onKeyPress={(e) => {
+              if (e.key === 'Enter') e.preventDefault();
+            }}
+          />
+        </div>
+        <div>
+          <TextField
+            label="Quantidade necessária"
+            type="number"
+            size="small"
+            value={quantidadeNecessaria}
+            onChange={(e) => setQuantidadeNecessaria(e.target.value)}
             className="form-input"
             onKeyPress={(e) => {
               if (e.key === 'Enter') e.preventDefault();

@@ -13,6 +13,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
 import Home from './Home';
 import MateriaPrima from './MateriaPrima';
+import Produtos from './Produtos';
+import RegistrarVenda from './RegistrarVenda';
+import ListaCompras from './ListaCompras';
 
 function Menu({user}) {
     
@@ -57,21 +60,21 @@ function Menu({user}) {
                     </ListItem>
                     <ListItem button className='menu-item' onClick={() => handleItemClick('emitir-lista')}>
                         <ShoppingCartIcon fontSize="large" />
-                        {!showIconsOnly && <ListItemText primary="Emitir lista de compras" />}
+                        {!showIconsOnly && <ListItemText primary="Lista de compras" />}
                     </ListItem>
-                    <ListItem button className='menu-item' onClick={() => handleItemClick('relatorio-vendas')}>
+                    {/* <ListItem button className='menu-item' onClick={() => handleItemClick('relatorio-vendas')}>
                         <AssessmentIcon fontSize="large" />
                         {!showIconsOnly && <ListItemText primary="Relatório de vendas" />}
-                    </ListItem>
+                    </ListItem> */}
                 </List>
             </div>
             <div className="content">
                 {fragment === 'home' && <Home user={user}/>}
                 {fragment === 'materia-prima' && <MateriaPrima />}
-                {fragment === 'produtos' && <h1>Você está na página de Matéria Produtos</h1>}
-                {fragment === 'registrar-venda' && <h1>Registrar venda</h1>}
-                {fragment === 'emitir-lista' && <h1>Emitir lista de compras</h1>}
-                {fragment === 'relatorio-vendas' && <h1>Relatório de vendas</h1>}
+                {fragment === 'produtos' && <Produtos />}
+                {fragment === 'registrar-venda' && <RegistrarVenda />}
+                {fragment === 'emitir-lista' && <ListaCompras />}
+                {/* {fragment === 'relatorio-vendas' && <h1>Relatório de vendas</h1>} */}
             </div>
         </div>
     );

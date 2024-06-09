@@ -1,0 +1,50 @@
+.smallCellInput{
+    width: 30%;
+    text-align: center !important;
+}
+
+.MuiTableRow-head {
+    background-color: #A4A69C;
+}
+
+.divAdicionaMateriais{
+    margin-top: 30px;
+}
+
+.materialMatchcodeRow.active {
+    background-color: #f0f0f0; /* Cor de fundo da linha ativa */
+  }
+  
+  .addMaterialButton{
+    background-color: #f0f0f0 !important;
+    color: green !important;
+    margin-right: 10px !important;
+  }
+  .deleteMaterialButton{
+    background-color: #f0f0f0 !important;
+    color: darkred !important;
+  }
+
+  .materialTableCell{
+    cursor: pointer;
+  }
+
+  .precoTotal{
+    background-color: #f0f0f0;
+    font-weight: bolder !important;
+  }
+  .precoTotalCell{
+    font-weight: bold !important;
+  }
+
+  .descricaoProduto{
+    margin-left: 15px !important;
+  }
+
+  .MuiTableCell-body{
+    cursor: pointer !important;
+  }
+  .MuiTableRow-hover:hover{
+    background-color: blanchedalmond !important;
+    transition: 0.3s ease-in-out;
+  }

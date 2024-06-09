@@ -130,3 +130,13 @@
   .btn-limpar{
     color: #BFBFB8 !important;
   }
+
+  .materialsListButton{
+    background-color: #BFBFB8;
+    border-radius: 10px;
+    transition: 0.6s ease-in-out
+  }
+
+  .materialsListButton:hover{
+    background-color: #A4A69C;
+  }

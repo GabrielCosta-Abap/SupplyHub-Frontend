@@ -71,17 +71,20 @@
   }
   
   .logoff-button {
-    background-color: #BFBFB8; /* Cor de fundo do botão */
-    color: #232625; /* Cor do texto do botão */
-    font-weight: bold;
-    border: none; /* Remove a borda */
-    padding: 8px 16px; /* Espaçamento interno */
-    border-radius: 4px; /* Borda arredondada */
-    cursor: pointer; /* Muda o cursor ao passar por cima */
+    background-color: #BFBFB8 !important; /* Cor de fundo do botão */
+    color: #232625 !important; /* Cor do texto do botão */
+    font-weight: bold !important;
+    border: none !important; /* Remove a borda */
+    padding: 8px 16px !important; /* Espaçamento interno */
+    border-radius: 4px !important; /* Borda arredondada */
+    cursor: pointer !important; /* Muda o cursor ao passar por cima */
+    transition: 0.6s ease-in-out !important;
+
   }
   
   .logoff-button:hover {
-    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+    background-color: #000 !important; /* Cor de fundo do botão ao passar o mouse */
+    color: #BFBFB8 !important;
   }
   
 .side-menu-burger{
