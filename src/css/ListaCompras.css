@@ -1,10 +1,6 @@
-.shopping-list {
-    width: 100%;
-    /* padding: 20px; */
-  }
-  
-  .lista-compras {
-    width: 100%;
+
+.lista-compras {
+    width: 80%;
     border-collapse: collapse;
   }
   
@@ -38,6 +34,10 @@
     background-color: #ccc;
   }
   
+  .totalizadorCompras{
+    background-color: #000 !important;
+  }
+
   @media (max-width: 600px) {
     table, thead, tbody, th, td, tr {
       display: block;

@@ -48,6 +48,8 @@ function Login() {
 
             {user == null ? (
 
+            <div className="login-body">
+
                 <div className='login-form-wrap'>
                     <h2>
                         Login
@@ -72,6 +74,8 @@ function Login() {
                     </form>
                     <p>{error}</p>
                 </div>
+            </div>    
+
             ) : (
                 <>
                     <header className="app-header">
@@ -82,7 +86,7 @@ function Login() {
                                 color="primary"
                                 onClick={handleLogoff}
                                 startIcon={<ExitToAppIcon />}
-                            >
+                                >
                                 Logoff
                             </Button>
                         </div>
