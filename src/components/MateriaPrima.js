@@ -101,7 +101,7 @@ export default function MateriaPrima() {
     setQuantidade(material.quantity);
     setQuantidadeNecessaria(material.neededquantity);
     setUnidade(material.um);
-    setPrecoCusto(material.price);
+    setPrecoCusto(material.price.replace('$','').replace('.',','));
     setMostrarPopup(false);
   };
 
