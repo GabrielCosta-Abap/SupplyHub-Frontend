@@ -412,7 +412,7 @@ export default function Produtos() {
                     hover onClick={() => {
                       setId(produto.id);
                       setNome(produto.description);
-                      setPrecoVenda(produto.sale_price);
+                      setPrecoVenda(produto.sale_price.replace('$','').replace('.',','));
                       setMateriaisSelecionados(produto.materials);
                       setMostrarPopupProdutos(false);
                     }}>
